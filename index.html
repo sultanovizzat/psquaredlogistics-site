@@ -8,38 +8,73 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #000;
+      background: linear-gradient(to bottom, #111, #1a1a1a);
       color: #fff;
+      line-height: 1.6;
     }
+
     header, footer {
-      background-color: #111;
-      padding: 20px;
+      background-color: #000;
+      padding: 40px 20px;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.5em;
       color: #FFD700;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
     }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+
     .button {
       display: inline-block;
       background-color: #FFD700;
       color: #000;
-      padding: 10px 20px;
-      margin-top: 20px;
+      padding: 14px 28px;
+      margin-top: 25px;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 5px;
+      font-size: 1em;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
     }
-    iframe {
-      width: 100%;
-      height: 800px;
-      border: none;
+
+    .button:hover {
+      background-color: #e6c200;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "✔";
+      color: #FFD700;
+      margin-right: 10px;
+    }
+
+    footer {
+      background-color: #000;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #999;
     }
   </style>
 </head>
@@ -55,10 +90,10 @@
       Based in Lithia Springs, GA — we're a professional logistics company operating across all 48 states. We offer great pay, flexible routes, and 24/7 support.
     </p>
     <ul>
-      <li>✔ 5+ Years in Business</li>
-      <li>✔ Fast Settlements</li>
-      <li>✔ Reliable Dispatch</li>
-      <li>✔ Fuel Cards & ELD Support</li>
+      <li>5+ Years in Business</li>
+      <li>Fast Settlements</li>
+      <li>Reliable Dispatch</li>
+      <li>Fuel Cards & ELD Support</li>
     </ul>
   </section>
 
@@ -70,10 +105,10 @@
   </section>
 
   <section>
-  <h2>Apply Now</h2>
-  <p>Fill out the application form below and our recruiter will contact you shortly.</p>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEEkx8U0KKO1p2aukfZUj3KT_ua9C4PjMWqt3pW6vZHelhcA/viewform?embedded=true" width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</section>
+    <h2>Apply Now</h2>
+    <p>Fill out the application form below and our recruiter will contact you shortly.</p>
+    <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfEEkx8U0KKO1p2aukfZUj3KT_ua9C4PjMWqt3pW6vZHelhcA/viewform" target="_blank">Apply via Google Form</a>
+  </section>
 
   <section>
     <h2>Contact</h2>
@@ -89,4 +124,3 @@
   </footer>
 </body>
 </html>
-insert real Google Form link
