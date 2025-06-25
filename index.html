@@ -2,95 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Psquared Logistics</title>
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('https://images.unsplash.com/photo-1589396576647-6bd2cf5fdb74') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-      line-height: 1.6;
+      margin: 0; font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1589396576647-6bd2cf5fdb74') center/cover no-repeat;
+      color: #fff; line-height: 1.6;
     }
-
     body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: -1;
+      content: ""; position: fixed; top:0; left:0;
+      width:100%; height:100%;
+      background: rgba(0,0,0,0.7); z-index:-1;
     }
-
     header, footer {
-      background-color: rgba(0, 0, 0, 0.8);
+      background: rgba(0,0,0,0.8); text-align:center;
       padding: 40px 20px;
-      text-align: center;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #FFD700;
+    header h1 { color: #FFD700; font-size: 2.5em; margin:0; }
+    header p { font-size:1.2em; margin-top:10px; }
+    section { max-width:900px; margin:40px auto; padding:40px 20px;
+      background: rgba(0,0,0,0.6); border-radius:12px; text-align:left;
     }
-
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 12px;
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      color: #FFD700;
-      margin-bottom: 20px;
-    }
-
+    section h2 { color:#FFD700; margin-bottom:20px; text-align:center; }
     .button {
-      display: inline-block;
-      background-color: #FFD700;
-      color: #000;
-      padding: 14px 28px;
-      margin-top: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1em;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
+      display:inline-block; background:#FFD700; color:#000;
+      padding:14px 28px; font-size:1em; font-weight:bold;
+      border-radius:8px; text-decoration:none;
+      transition: background 0.3s;
+      margin:20px auto; text-align:center;
     }
-
-    .button:hover {
-      background-color: #e6c200;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
+    .button:hover { background:#e6c200; }
+    ul { padding:0; list-style:none; }
     ul li::before {
-      content: "✔";
-      color: #FFD700;
-      margin-right: 10px;
+      content:"✔"; color:#FFD700;
+      display:inline-block; width:1em;
     }
-
-    footer {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 30px;
-      font-size: 0.9em;
-      color: #999;
-    }
+    footer { font-size:0.9em; color:#999; }
+    .services li { margin-bottom:10px; }
   </style>
 </head>
 <body>
@@ -100,38 +49,30 @@
   </header>
 
   <section>
-    <h2>About Psquared Logistics</h2>
-    <p>
-      Based in Lithia Springs, GA — we're a professional logistics company operating across all 48 states. We offer great pay, flexible routes, and 24/7 support.
-    </p>
-    <ul>
-      <li>5+ Years in Business</li>
-      <li>Fast Settlements</li>
-      <li>Reliable Dispatch</li>
-      <li>Fuel Cards & ELD Support</li>
+    <h2>Our Services</h2>
+    <ul class="services">
+      <li><strong>Full Truckload (FTL)</strong> – large shipments over 10,000 lbs or 12 linear feet with speed and efficiency :contentReference[oaicite:7]{index=7}.</li>
+      <li><strong>Oversized / Heavy Haul</strong> – expert handling of freight exceeding weight/size limits with permits and equipment :contentReference[oaicite:8]{index=8}.</li>
+      <li><strong>Trailer & Power</strong> – reliable trailer & power solutions for all your freight needs :contentReference[oaicite:9]{index=9}.</li>
     </ul>
-  </section>
-
-  <section>
-    <h2>Why Drive With Us?</h2>
-    <p>
-      Whether you're a solo driver or a team, we offer competitive weekly pay, lease-on options, and no forced dispatch. Join a team that treats you like family.
-    </p>
   </section>
 
   <section>
     <h2>Apply Now</h2>
     <p>Fill out the application form below and our recruiter will contact you shortly.</p>
-    <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfEEkx8U0KKO1p2aukfZUj3KT_ua9C4PjMWqt3pW6vZHelhcA/viewform" target="_blank">Apply via Google Form</a>
+    <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfEEkx8U0KKO1p2aukfZUj3KT_ua9C4PjMWqt3pW6vZHelhcA/viewform" target="_blank">
+      Start Application Form
+    </a>
   </section>
 
   <section>
-    <h2>Contact</h2>
-    <p>
-      📍 107 Columns Dr, Lithia Springs, GA 30122<br>
-      📞 (678) 273-9207<br>
-      ✉ sultanov.izzatllc@gmail.com
-    </p>
+    <h2>Need Assistance?</h2>
+    <p>If you have questions or need help during the application, reach out:</p>
+    <ul>
+      <li>📍 268 Katie Dr, Feasterville‑Trevose, PA 19053</li>
+      <li>📞 +1 724 607‑7777</li>
+      <li>✉ sts@safartsllc.com | safarts@yahoo.com</li>
+    </ul>
   </section>
 
   <footer>
@@ -139,4 +80,4 @@
   </footer>
 </body>
 </html>
-updated
+add services and contact section
